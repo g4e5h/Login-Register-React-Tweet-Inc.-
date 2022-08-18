@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+body{
+    /* background-color: rgba(107, 107, 107, 0.171); */
+    color: white;
+    /* background-image: url('../../../public/1.jpg'); */
+    background-color: rgb(0, 0, 0);
+    /* background-repeat: no-repeat; */
+    background-blend-mode: hard-light;
+    /* background-size: cover; */
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.7rem,calc(1rem+1vh),2rem);
+}
+#main-login{
+    position: relative;
+    margin: 4em;border: 2px solid #1DA1F2;
+    border-radius: 25px;
+    /* background-color: rgba(107, 107, 107, 0.418); */
+display: flex;
+flex-direction: column;
+/* background-color: antiquewhite; */
+min-height:70vh;
+width: 30rem;
+}
+
+
+
+
+.login-heading{
+    margin-right: 3%;
+    color: white;
+    padding:8px;
+    cursor:pointer;
+    font-size: 2.2rem;
+    margin-left: 3%;
+    border: none;
+    background-color: transparent; 
+    /* padding: 10px;  */
+    border-radius: 10px;
+}
+
+.name-heading{
+    padding:1rem 1.8rem;
+    font-size:1.8rem;
+}
+.login-input{
+    border: 3px solid transparent;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.986);
+    margin-left: 1.6em;
+    height: 45px;
+    width: 75%;
+    border-radius: 0.5rem;
+    padding-left: 10px;
+    
+}
+.login-input:focus{
+    border: 3px solid #1DA1F2;
+    box-shadow: 0px 0px 6px 0px #ffffff8a;
+}
+.submit-button{
+    background-color: #1DA1F2;
+    color: white;
+    margin-bottom: 8%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 8%;
+    margin-left: 1.6em;
+    height: 45px;
+    width: 40%;
+    border-radius: 0.5rem;
+    border: none;
+    /* padding-left: 10px; */
+}
+.register-button{
+    
+    cursor:pointer;
+    font-size: 2.2rem;
+    border: none;
+    background-color: transparent; 
+    padding: 10px; 
+    border-radius: 10px;
+    
+
+}
+.register-button:active{
+    background-color: rgba(128, 128, 128, 0.219);
+}
+
+.login-heading:active{
+    background-color: rgba(128, 128, 128, 0.219);
+}
+
+.submit-button:active{
+    background-color: rgba(128, 128, 128, 0.219);
+}
+.submit-button:hover{
+    border:2px solid white;
+}
+
+*::placeholder{
+ color: rgba(77, 77, 77, 0.849);
+}
+
+#icon-top{
+    min-height: 9rem;
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    height: 25px;
+    width: 30px;
+    height: 21vh;
+    width: 23vw;
+    /* border: 2px solid white; */
+    background-image: url('../../../public/TWITTERBIG.jpg');
+    background-size: cover;
+}
+
+#form-icon{
+    display: none;
+    background-image:  url('../../../public/twittersmall1.png');
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3%;
+    top: 1em;
+    height: 7rem;
+    width: 20%;
+    
+}
+@keyframes leftrightcenter{
+    35%{
+        margin-left: 0;
+        /* transform:rotateX(360deg); */
+    }
+    70%{
+        margin-left: 3.7em;
+    }
+}
+aside{
+    margin-left: 1.8em;
+    display: flex;
+    justify-content: center;
+    width:80%;
+    animation: leftrightcenter .8s ease .4s 1 alternate;
+   transition: 1s;
+}
+aside div{
+    color: red;
+    font-size:1.4em;
+}
+
+
+
+@media screen and (max-width:550px){
+    #main-login{
+       width :20rem;
+       margin: 10px;
+     
+    }   
+    .register-button{
+        margin-left:5%;
+        
+        font-size:2rem;
+    }
+    #form-icon{
+        right:10%;
+        top: .3em;
+        background-size: 80%;
+    }
+    aside div{
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width:1000px){
+    #icon-top{
+        display: none;
+    }
+    #form-icon{
+        display: block;
+    }
+}
